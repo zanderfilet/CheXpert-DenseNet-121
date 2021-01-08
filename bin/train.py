@@ -36,7 +36,6 @@ n_epochs = 10
 
 # Creating Densenet121
 def densenet(input_shape, n_classes, filters=32):
-    # batch norm + relu + conv
     def bn_rl_conv(x, filters, kernel=1, strides=1):
 
         x = BatchNormalization()(x)
