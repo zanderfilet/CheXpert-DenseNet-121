@@ -1,0 +1,28 @@
+~~~ PROCESS
+_______________
+TRAINING SETUP:
+
+C DenseNet121
+C Fully connected 14-dimensional dense layer (sigmoid activation for probabilities of disease presence)
+C Input size: 320 x 320
+
+C  Adam optimizer ß-parameters: ß1 = 0.9, ß2 = 0.999
+C  Batch size: 32
+C  Learning rate: 1e-4 (reduced by a factor of 10 each epoch)
+
+_______________
+
+C 1) Set up removing negative parent labels
+  2) Add method of saving a model for analysis: save at individual epoch intervals?
+
+C  3) Make image reading code to convert image to 2-d matrix (normalized, mean-0, standardized)
+___
+UTILS
+C 4) Make image resize code
+___
+
+  Implement CUDA
+
+_______________
+
+----->>> Testing?- Identify 200 CXR with 3-radiologist assessments
